@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+	<title>Trivia </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<center>
+	<h1><img src="css/triviatitulo.png"/></h1>
+	<div id="login" class="helveticaText">¿Cuál es tu nombre?:
+	<input type="text" id="userName"><br><br>
+	<button id="sendName" onclick="clickLoginButton()">Enviar</button>
+    </div>
+	<h2>
+		<label id="welcomeMessage"></label>
+	</h2>
+	<br>
+	<div id="buttonsYesNo" hidden class="helveticaText">¿Quieres jugar?
+	<button id="buttonYes" onclick="clickYesButton()">Si</button>
+	<button id="buttonNo" onclick="clickNoButton()">No</button></div>
+	<script src="js/app.js"></script>
+	<div id="questions" hidden class="helveticaText">
+			<b>Pregunta Nº1:</b><br> 
+			¿Quiénes buscan tener nuevas oportunidades en Laboratoria? <br>
+			<input type="radio" id="optionOne" name="questionOne" value= "1">Mujeres <br>
+			<input type="radio" id="optionTwo" name="questionOne" value= "0">Delfines <br>
+			<input type="radio" id="optionThree" name="questionOne" value= "0">Protozoos
+		<p>
+			<b>Pregunta Nº2:</b><br> 
+			¿Cuál de estas no es una sede de Laboratoria (todavía)?<br>
+			<input type="radio" id="optionFour" name="questionTwo" value= "0">Santiago, Chile <br>
+			<input type="radio" id="optionFive" name="questionTwo" value= "1">Abu Dabi, Emiratos Árabes <br>
+			<input type="radio" id="optionSix" name="questionTwo" value= "0">Lima, Perú
+		</p>
+		<p>
+			<b>Pregunta Nº3:</b><br> 
+			¿Con qué perfil egresas de Laboratoria?<br>
+			<input type="radio" id="optionSeven" name="questionThree" value= "1">FrontEnd Web Developer y UX Designer <br>
+			<input type="radio" id="optionEight" name="questionThree" value= "0">Experta en macramé <br>
+			<input type="radio" id="optionNine" name="questionThree" value= "0">Animador de kermés
+		</p>
+		<button id="sendAnswers" onclick="clickSendAnswers()">Enviar Respuestas</button>
+	</div>
+	<div class="helveticaText">
+		<label id="points"></label>
+   </div>
+</center>
+</body>
+</html>

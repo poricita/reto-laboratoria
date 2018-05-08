@@ -1,0 +1,28 @@
+img {
+    max-width: 50%;
+    height: auto;
+}
+/* #buttonsYesNo {
+	visibility: hidden;
+} */
+.helveticaText {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h2 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #F9A91A;
+	font-weight: 400;
+}
+html {
+	background-image: url("fondo.png");
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+button {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #F9A91A;
+	min-height: 36px; 
+	min-width: 88px;
+}
